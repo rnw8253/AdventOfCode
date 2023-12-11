@@ -1,0 +1,18 @@
+import numpy as np
+
+
+
+
+def CalculateWaysToWin(timeHeld,recordDistance):
+    high = np.floor((timeHeld + np.sqrt(timeHeld*timeHeld + 4*recordDistance)/2))
+    low = np.ceil((timeHeld - np.sqrt(timeHeld*timeHeld + 4*recordDistance)/2))
+    return high - low
+
+
+
+
+print(CalculateWaysToWin(7,9))
+print(CalculateWaysToWin(15,40))
+print(CalculateWaysToWin(30,200))
+
+                  
