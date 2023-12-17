@@ -35,7 +35,7 @@ for block in blocks:
     row, col = m.checkReflectionSmudges()
     total2 += 100*row + col
 print(f"Not accounting for smudges test total: {total}")
-print(f"Accounting for smudges test total: {total2}")
+print(f"Accounting for smudges testt otal: {total2}")
 
     
 blocks = open("data.dat").read().split("\n\n")
